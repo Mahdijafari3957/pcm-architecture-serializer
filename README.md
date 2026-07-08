@@ -99,6 +99,8 @@ src/main/resources/models/travelplanner/travelplanner.json
 
 > **Note:** To run the serializer on another PCM model, first add the required PCM model files to the `src/main/resources/models/` directory. Each PCM model should be placed in its own folder and should include the required artifacts, such as the repository model, system model, allocation model, and resource environment model. Then update the corresponding `modelName` and `modelBaseName` values in `Main.java`.
 
+---
+
 ## Troubleshooting
 
 ### 1. `package org.eclipse.emf... does not exist`
