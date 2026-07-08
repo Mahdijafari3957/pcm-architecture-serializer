@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_0IZgUJSYEeyjlrv9ryW3Zw" entityName="MaintenanceSystem">
+  <assemblyContexts__ComposedStructure id="_4lwccJSYEeyjlrv9ryW3Zw" entityName="Assembly_MachineComponent">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="maintenanceScenario.repository#_nYJakJSQEeyOldzBRFqWVw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_53Jy4JSYEeyjlrv9ryW3Zw" entityName="Assembly_ProductionStorageComponent">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="maintenanceScenario.repository#_pEfAkJSQEeyOldzBRFqWVw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_7bi90JSYEeyjlrv9ryW3Zw" entityName="Assembly_ProductStorage">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="maintenanceScenario.repository#_vbUxaJSREeyOldzBRFqWVw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_8WGhkJSYEeyjlrv9ryW3Zw" entityName="Assembly_TerminalComponent">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="maintenanceScenario.repository#_XYPy4JSREeyOldzBRFqWVw"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_HFSBEJSZEeyjlrv9ryW3Zw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_8WGhkJSYEeyjlrv9ryW3Zw" providingAssemblyContext_AssemblyConnector="_4lwccJSYEeyjlrv9ryW3Zw">
+    <providedRole_AssemblyConnector href="maintenanceScenario.repository#_SY3u0JSREeyOldzBRFqWVw"/>
+    <requiredRole_AssemblyConnector href="maintenanceScenario.repository#_cPTBYJSREeyOldzBRFqWVw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_Huf9MJSZEeyjlrv9ryW3Zw" entityName="StorageMachine" requiringAssemblyContext_AssemblyConnector="_4lwccJSYEeyjlrv9ryW3Zw" providingAssemblyContext_AssemblyConnector="_53Jy4JSYEeyjlrv9ryW3Zw">
+    <providedRole_AssemblyConnector href="maintenanceScenario.repository#_0F5fkJSQEeyOldzBRFqWVw"/>
+    <requiredRole_AssemblyConnector href="maintenanceScenario.repository#_KWYXsJSUEeyjlrv9ryW3Zw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_KUK-8JSZEeyjlrv9ryW3Zw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_Ie5fYJSZEeyjlrv9ryW3Zw" assemblyContext_ProvidedDelegationConnector="_8WGhkJSYEeyjlrv9ryW3Zw">
+    <innerProvidedRole_ProvidedDelegationConnector href="maintenanceScenario.repository#_bG5O4JSREeyOldzBRFqWVw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_L8dycJSZEeyjlrv9ryW3Zw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_K2Q_YJSZEeyjlrv9ryW3Zw" assemblyContext_ProvidedDelegationConnector="_7bi90JSYEeyjlrv9ryW3Zw">
+    <innerProvidedRole_ProvidedDelegationConnector href="maintenanceScenario.repository#_vbUxaZSREeyOldzBRFqWVw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_eKmkkJSeEeyjlrv9ryW3Zw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_cCIcMJSeEeyjlrv9ryW3Zw" assemblyContext_ProvidedDelegationConnector="_4lwccJSYEeyjlrv9ryW3Zw">
+    <innerProvidedRole_ProvidedDelegationConnector href="maintenanceScenario.repository#_SY3u0JSREeyOldzBRFqWVw"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Ie5fYJSZEeyjlrv9ryW3Zw" entityName="MaintenanceTerminalProvidedRole">
+    <providedInterface__OperationProvidedRole href="maintenanceScenario.repository#_gpcG4JSQEeyOldzBRFqWVw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_K2Q_YJSZEeyjlrv9ryW3Zw" entityName="StorageProvidedRole">
+    <providedInterface__OperationProvidedRole href="maintenanceScenario.repository#_jdzE4JSQEeyOldzBRFqWVw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_cCIcMJSeEeyjlrv9ryW3Zw" entityName="MachineProvidedRole">
+    <providedInterface__OperationProvidedRole href="maintenanceScenario.repository#_RI-psJSQEeyOldzBRFqWVw"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

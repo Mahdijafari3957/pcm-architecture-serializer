@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="FlightPlannerScenario">
+  <linkingResources__ResourceEnvironment id="_67lcMMN9EeWPE-QAhbUzuQ" entityName="Internet" connectedResourceContainers_LinkingResource="_fuWBEMN4EeWPE-QAhbUzuQ _HM_VsMN5EeWPE-QAhbUzuQ"/>
+  <linkingResources__ResourceEnvironment id="_niT6YMN9EeWPE-QAhbUzuQ" entityName="4G + Internet" connectedResourceContainers_LinkingResource="_Lq-ZYMN4EeWPE-QAhbUzuQ _fuWBEMN4EeWPE-QAhbUzuQ"/>
+  <linkingResources__ResourceEnvironment id="_1XdFQMN9EeWPE-QAhbUzuQ" entityName="OpenWifi + Internet" connectedResourceContainers_LinkingResource="_fuWBEMN4EeWPE-QAhbUzuQ _Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+  <resourceContainer_ResourceEnvironment id="_HM_VsMN5EeWPE-QAhbUzuQ" entityName="AgencyServer"/>
+  <resourceContainer_ResourceEnvironment id="_fuWBEMN4EeWPE-QAhbUzuQ" entityName="AirlineServer"/>
+  <resourceContainer_ResourceEnvironment id="_Lq-ZYMN4EeWPE-QAhbUzuQ" entityName="MobilePhone"/>
+</resourceenvironment:ResourceEnvironment>

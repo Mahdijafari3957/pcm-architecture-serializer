@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone:ZoneRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:zone="edu.kit.pentest.zone">
+  <zones name="Receptionist" confidentialityLevel="1"/>
+  <zones name="Patient"/>
+  <zones name="Physician" confidentialityLevel="2"/>
+  <zones name="Database" confidentialityLevel="2"/>
+  <zoneAnnotations zone="//@zones.3">
+    <interface xsi:type="repository:OperationInterface" href="AppointmentManagement.repository#_y47B19BaEfClkdDGvFel8g"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.1">
+    <interface xsi:type="repository:OperationInterface" href="AppointmentManagement.repository#_2dFFF9BaEfClkdDGvFel8g"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.2">
+    <interface xsi:type="repository:OperationInterface" href="AppointmentManagement.repository#_4b_o19BaEfClkdDGvFel8g"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.0">
+    <interface xsi:type="repository:OperationInterface" href="AppointmentManagement.repository#_515bB9BaEfClkdDGvFel8g"/>
+  </zoneAnnotations>
+</zone:ZoneRepository>

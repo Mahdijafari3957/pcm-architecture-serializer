@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_7TQj4LSqEeyIO4nD9VIyMw" entityName="GradeManagmentRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_CsD9cLSrEeyIO4nD9VIyMw" entityName="GradeManagementComponent">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_lagY0LSzEeyIO4nD9VIyMw" entityName="ExternalGradeManagement.GradeManagement.OperationProvidedRole1" providedInterface__OperationProvidedRole="_JFoHkLSrEeyIO4nD9VIyMw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_lbFAkLSzEeyIO4nD9VIyMw" describedService__SEFF="_Mo1IkLSrEeyIO4nD9VIyMw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_lbFAkbSzEeyIO4nD9VIyMw" successor_AbstractAction="_lbFnoLSzEeyIO4nD9VIyMw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lbFnoLSzEeyIO4nD9VIyMw" predecessor_AbstractAction="_lbFAkbSzEeyIO4nD9VIyMw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_lccSgLSzEeyIO4nD9VIyMw" describedService__SEFF="_LIxEALSrEeyIO4nD9VIyMw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_lccSgbSzEeyIO4nD9VIyMw" successor_AbstractAction="_lccSgrSzEeyIO4nD9VIyMw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lccSgrSzEeyIO4nD9VIyMw" predecessor_AbstractAction="_lccSgbSzEeyIO4nD9VIyMw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_lcpt4LSzEeyIO4nD9VIyMw" describedService__SEFF="_GiaqULSzEeyIO4nD9VIyMw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_lcpt4bSzEeyIO4nD9VIyMw" successor_AbstractAction="_lcpt4rSzEeyIO4nD9VIyMw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lcpt4rSzEeyIO4nD9VIyMw" predecessor_AbstractAction="_lcpt4bSzEeyIO4nD9VIyMw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_JFoHkLSrEeyIO4nD9VIyMw" entityName="GradeManagement">
+    <signatures__OperationInterface id="_LIxEALSrEeyIO4nD9VIyMw" entityName="assign"/>
+    <signatures__OperationInterface id="_Mo1IkLSrEeyIO4nD9VIyMw" entityName="receive"/>
+    <signatures__OperationInterface id="_GiaqULSzEeyIO4nD9VIyMw" entityName="view"/>
+  </interfaces__Repository>
+</repository:Repository>

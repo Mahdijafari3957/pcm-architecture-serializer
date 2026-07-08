@@ -1,0 +1,104 @@
+{
+  "modelType" : "Palladio Component Model Architecture",
+  "components" : [ {
+    "name" : "Appointment Management",
+    "provides" : [ "Receptionist Interface", "Physician Interface", "Patient Interface" ],
+    "requires" : [ "Database Management" ]
+  }, {
+    "name" : "Patient Database Management",
+    "provides" : [ "Database Management" ],
+    "requires" : [ ]
+  }, {
+    "name" : "User Interface Receptionist",
+    "provides" : [ ],
+    "requires" : [ "Receptionist Interface" ]
+  }, {
+    "name" : "User Interface Physician",
+    "provides" : [ ],
+    "requires" : [ "Physician Interface" ]
+  }, {
+    "name" : "User Interface Patient",
+    "provides" : [ ],
+    "requires" : [ "Patient Interface" ]
+  } ],
+  "interfaces" : [ {
+    "name" : "Database Management",
+    "operations" : [ ]
+  }, {
+    "name" : "Patient Interface",
+    "operations" : [ ]
+  }, {
+    "name" : "Physician Interface",
+    "operations" : [ ]
+  }, {
+    "name" : "Receptionist Interface",
+    "operations" : [ ]
+  } ],
+  "systemAssembly" : {
+    "systemName" : "Healthcare Management System",
+    "assemblies" : [ {
+      "name" : "Assembly_Appointment Management",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_Patient Database Management",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_User Interface Patient",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_User Interface Physician",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_User Interface Receptionist",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    } ]
+  },
+  "connectors" : [ {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_Appointment Management",
+    "to" : "Assembly_Patient Database Management"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_User Interface Receptionist",
+    "to" : "Assembly_Appointment Management"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_User Interface Physician",
+    "to" : "Assembly_Appointment Management"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_User Interface Patient",
+    "to" : "Assembly_Appointment Management"
+  } ],
+  "resourceEnvironment" : {
+    "resourceContainers" : [ "AppointmentManagementContainer", "DatabaseManagementContainer", "UserInterfaceContainer" ],
+    "networks" : [ {
+      "name" : "InhouseConnection",
+      "connects" : [ "UserInterfaceContainer", "AppointmentManagementContainer" ]
+    }, {
+      "name" : "ExternalConnection",
+      "connects" : [ "AppointmentManagementContainer", "DatabaseManagementContainer" ]
+    } ]
+  },
+  "allocation" : [ {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  }, {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  }, {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  }, {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  }, {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  } ]
+}

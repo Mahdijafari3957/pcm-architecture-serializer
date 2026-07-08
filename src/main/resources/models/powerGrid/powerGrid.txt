@@ -1,0 +1,10 @@
+The scenario is the cyberattack on the Ukrainian power grid at the end of 2015. 
+During the incident, malicious users entered the business backend of a power supplier by using compromised credentials. 
+Afterwards, the attacker propagated through the network and gained control of various services, such as the domain controller or the call centres. 
+The business backend was connected by VPN to the Industrial Control Systems (ICS) network. 
+During their propagation, the attacker also got access to credentials for the VPN to the ICS network. 
+The ICS network contained DMS servers and clients for managing the breakers of the power grid. 
+Breakers are devices to disconnect a power grid. 
+The attacker gained access to them and opened the breakers, which led to a power outage. 
+In addition, they disabled the call centres and the network to increase the damage and lengthen the repair time. 
+In our scenario, we only investigate the propagation part, i.e., after the initial compromisation and till the propagation ends with accessing the breakers.

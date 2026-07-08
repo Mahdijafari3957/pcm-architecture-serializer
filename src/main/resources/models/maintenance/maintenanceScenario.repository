@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_ITWs0JSQEeyOldzBRFqWVw" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_nYJakJSQEeyOldzBRFqWVw" entityName="MachineComponent">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_SY3u0JSREeyOldzBRFqWVw" entityName="Machine.Storing.ProvidedRole" providedInterface__OperationProvidedRole="_RI-psJSQEeyOldzBRFqWVw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_KWYXsJSUEeyjlrv9ryW3Zw" entityName="Machine.Storage.Required" requiredInterface__OperationRequiredRole="_jdzE4JSQEeyOldzBRFqWVw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_SZKCsJSREeyOldzBRFqWVw" describedService__SEFF="_JZZSYJSREeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_SZKCsZSREeyOldzBRFqWVw" successor_AbstractAction="_RsJxwKqVEeyxbqK84Z3gRg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_SZKpwJSREeyOldzBRFqWVw" predecessor_AbstractAction="_VUnqEJSYEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_VUnqEJSYEeyjlrv9ryW3Zw" entityName="ExternalCallAction1" predecessor_AbstractAction="_RsJxwKqVEeyxbqK84Z3gRg" successor_AbstractAction="_SZKpwJSREeyOldzBRFqWVw" calledService_ExternalService="_qP0LQJSQEeyOldzBRFqWVw" role_ExternalService="_KWYXsJSUEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_RsJxwKqVEeyxbqK84Z3gRg" entityName="SetVariableAction1" predecessor_AbstractAction="_SZKCsZSREeyOldzBRFqWVw" successor_AbstractAction="_VUnqEJSYEeyjlrv9ryW3Zw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_SZZ6UJSREeyOldzBRFqWVw" describedService__SEFF="_HZ11cJSREeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_SZZ6UZSREeyOldzBRFqWVw" successor_AbstractAction="_RLAGIJSUEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_SZahYJSREeyOldzBRFqWVw" predecessor_AbstractAction="_ano_sJSUEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_RLAGIJSUEeyjlrv9ryW3Zw" entityName="ExternalCallAction1" predecessor_AbstractAction="_SZZ6UZSREeyOldzBRFqWVw" successor_AbstractAction="_ano_sJSUEeyjlrv9ryW3Zw" calledService_ExternalService="_3GqscJSREeyOldzBRFqWVw" role_ExternalService="_KWYXsJSUEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_ano_sJSUEeyjlrv9ryW3Zw" entityName="MachineVariable" predecessor_AbstractAction="_RLAGIJSUEeyjlrv9ryW3Zw" successor_AbstractAction="_SZahYJSREeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_pEfAkJSQEeyOldzBRFqWVw" entityName="ProductionStorageComponent">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_0F5fkJSQEeyOldzBRFqWVw" entityName="Storage.Operationrole" providedInterface__OperationProvidedRole="_jdzE4JSQEeyOldzBRFqWVw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_0Gk1AJSQEeyOldzBRFqWVw" describedService__SEFF="_qP0LQJSQEeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_0GlcEJSQEeyOldzBRFqWVw" successor_AbstractAction="_284TwJSQEeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_0GlcEZSQEeyOldzBRFqWVw" predecessor_AbstractAction="_284TwJSQEeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_284TwJSQEeyOldzBRFqWVw" entityName="ProductionStorageStoreVariable" predecessor_AbstractAction="_0GlcEJSQEeyOldzBRFqWVw" successor_AbstractAction="_0GlcEZSQEeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_8Y9sgJSREeyOldzBRFqWVw" describedService__SEFF="_3GqscJSREeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_8rfm8JSREeyOldzBRFqWVw" successor_AbstractAction="_oejwkJSyEeybcdaBMTN3Rw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_8rfm8ZSREeyOldzBRFqWVw" predecessor_AbstractAction="_oejwkJSyEeybcdaBMTN3Rw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_oejwkJSyEeybcdaBMTN3Rw" entityName="ProductionStorageLoadVariable" predecessor_AbstractAction="_8rfm8JSREeyOldzBRFqWVw" successor_AbstractAction="_8rfm8ZSREeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_XYPy4JSREeyOldzBRFqWVw" entityName="TerminalComponent">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_bG5O4JSREeyOldzBRFqWVw" entityName="Terminal.Maintenance.ProvidedRole" providedInterface__OperationProvidedRole="_gpcG4JSQEeyOldzBRFqWVw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_cPTBYJSREeyOldzBRFqWVw" entityName="TerminalComponent.Machine.ProvidedRole" requiredInterface__OperationRequiredRole="_RI-psJSQEeyOldzBRFqWVw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_bHWh4JSREeyOldzBRFqWVw" describedService__SEFF="_Cj0hsJSREeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_bHWh4ZSREeyOldzBRFqWVw" successor_AbstractAction="_iB5SIJSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_bHWh4pSREeyOldzBRFqWVw" predecessor_AbstractAction="_hjFyEJSYEeyjlrv9ryW3Zw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_iB5SIJSREeyOldzBRFqWVw" entityName="ExternalCallAction1" predecessor_AbstractAction="_bHWh4ZSREeyOldzBRFqWVw" successor_AbstractAction="_hjFyEJSYEeyjlrv9ryW3Zw" calledService_ExternalService="_HZ11cJSREeyOldzBRFqWVw" role_ExternalService="_cPTBYJSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_hjFyEJSYEeyjlrv9ryW3Zw" entityName="TerminalComponentVariable" predecessor_AbstractAction="_iB5SIJSREeyOldzBRFqWVw" successor_AbstractAction="_bHWh4pSREeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_vbUxaJSREeyOldzBRFqWVw" entityName="ProductStorage">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_vbUxaZSREeyOldzBRFqWVw" entityName="Storage.ProvidedRole" providedInterface__OperationProvidedRole="_jdzE4JSQEeyOldzBRFqWVw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_vbUxapSREeyOldzBRFqWVw" describedService__SEFF="_qP0LQJSQEeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_vbUxa5SREeyOldzBRFqWVw" successor_AbstractAction="_vbUxbZSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_vbUxbJSREeyOldzBRFqWVw" predecessor_AbstractAction="_vbUxbZSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_vbUxbZSREeyOldzBRFqWVw" entityName="SetVariableAction1" predecessor_AbstractAction="_vbUxa5SREeyOldzBRFqWVw" successor_AbstractAction="_vbUxbJSREeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_7S9GsJSREeyOldzBRFqWVw" describedService__SEFF="_3GqscJSREeyOldzBRFqWVw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_7vht8JSREeyOldzBRFqWVw" successor_AbstractAction="_--dvIJSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_7vht8ZSREeyOldzBRFqWVw" predecessor_AbstractAction="_--dvIJSREeyOldzBRFqWVw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_--dvIJSREeyOldzBRFqWVw" entityName="SetVariableAction1" predecessor_AbstractAction="_7vht8JSREeyOldzBRFqWVw" successor_AbstractAction="_7vht8ZSREeyOldzBRFqWVw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_RI-psJSQEeyOldzBRFqWVw" entityName="Machine">
+    <signatures__OperationInterface id="_HZ11cJSREeyOldzBRFqWVw" entityName="access">
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_JZZSYJSREeyOldzBRFqWVw" entityName="saveLogs">
+      <parameters__OperationSignature parameterName="logData">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_gpcG4JSQEeyOldzBRFqWVw" entityName="MaintenanceTerminal">
+    <signatures__OperationInterface id="_Cj0hsJSREeyOldzBRFqWVw" entityName="access">
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_jdzE4JSQEeyOldzBRFqWVw" entityName="Storage">
+    <signatures__OperationInterface id="_qP0LQJSQEeyOldzBRFqWVw" entityName="store">
+      <parameters__OperationSignature parameterName="data">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_3GqscJSREeyOldzBRFqWVw" entityName="get">
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+</repository:Repository>

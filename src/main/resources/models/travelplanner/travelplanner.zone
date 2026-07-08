@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone:ZoneRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:zone="edu.kit.pentest.zone">
+  <zones name="Comission" confidentialityLevel="1"/>
+  <zones name="BookingSelection" confidentialityLevel="1"/>
+  <zones name="Booking" confidentialityLevel="1"/>
+  <zones name="FlightOffers"/>
+  <zones name="Configuration" confidentialityLevel="2"/>
+  <zones name="Declassification" confidentialityLevel="2"/>
+  <zones name="AirlineAdministration" confidentialityLevel="1"/>
+  <zones name="BookingConfirmation" confidentialityLevel="1"/>
+  <zoneAnnotations zone="//@zones.6">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_lKDm4M5wEeWFJak7Wqvc0g"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.2">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_y_H88MNyEeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.7">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_F6kdd9TzEee-_bZGhm8PwA"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.1">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_uUkncMN0EeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.0">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_IR9L8MN0EeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.4">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_MACf4MN3EeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.5">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_CayVgMN6EeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.3">
+    <interface xsi:type="repository:OperationInterface" href="default.repository#_OWfzMMNyEeWPE-QAhbUzuQ"/>
+  </zoneAnnotations>
+</zone:ZoneRepository>

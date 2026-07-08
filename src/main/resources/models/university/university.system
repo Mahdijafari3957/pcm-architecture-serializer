@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_pajG0LSzEeyIO4nD9VIyMw" entityName="GradeManagementSystem">
+  <assemblyContexts__ComposedStructure id="_1QG_kLSzEeyIO4nD9VIyMw" entityName="Assembly_ExternalGrade">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="gradeManagement.repository#_CsD9cLSrEeyIO4nD9VIyMw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ABQ1ALS0EeyIO4nD9VIyMw" entityName="Assembly_InternalGradeManagement">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="gradeManagement.repository#_CsD9cLSrEeyIO4nD9VIyMw"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_J4hOALS0EeyIO4nD9VIyMw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_EQDwsLS0EeyIO4nD9VIyMw" assemblyContext_ProvidedDelegationConnector="_1QG_kLSzEeyIO4nD9VIyMw">
+    <innerProvidedRole_ProvidedDelegationConnector href="gradeManagement.repository#_lagY0LSzEeyIO4nD9VIyMw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_NB-SQLS0EeyIO4nD9VIyMw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_KSX4cLS0EeyIO4nD9VIyMw" assemblyContext_ProvidedDelegationConnector="_ABQ1ALS0EeyIO4nD9VIyMw">
+    <innerProvidedRole_ProvidedDelegationConnector href="gradeManagement.repository#_lagY0LSzEeyIO4nD9VIyMw"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_EQDwsLS0EeyIO4nD9VIyMw" entityName="GradeManagementExternal">
+    <providedInterface__OperationProvidedRole href="gradeManagement.repository#_JFoHkLSrEeyIO4nD9VIyMw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_KSX4cLS0EeyIO4nD9VIyMw" entityName="GradeManagementInternal">
+    <providedInterface__OperationProvidedRole href="gradeManagement.repository#_JFoHkLSrEeyIO4nD9VIyMw"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

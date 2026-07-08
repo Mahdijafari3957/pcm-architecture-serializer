@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_c6pfgCwaEeylP6vhO63XvA" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_u1qZ8CwiEeylP6vhO63XvA" entityName="VPNApplication">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_xWvPkCwiEeylP6vhO63XvA" entityName="BasicComponent1.VPN-Server.OperationProvidedRole1" providedInterface__OperationProvidedRole="_wMaEECwaEeylP6vhO63XvA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_xXMikCwiEeylP6vhO63XvA" describedService__SEFF="_hyv9QCwiEeylP6vhO63XvA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_xXMikSwiEeylP6vhO63XvA" successor_AbstractAction="_xXMikiwiEeylP6vhO63XvA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_xXMikiwiEeylP6vhO63XvA" predecessor_AbstractAction="_xXMikSwiEeylP6vhO63XvA"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4XkOACwiEeylP6vhO63XvA" entityName="DMSClientApplication">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_B578ICwjEeylP6vhO63XvA" entityName="DMSClientApplication.DMSClient.OperationProvidedRole1" providedInterface__OperationProvidedRole="_9ZiMsCwaEeylP6vhO63XvA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="__o1cMCwiEeylP6vhO63XvA" entityName="Required.DMSServer" requiredInterface__OperationRequiredRole="_3t5fkCwaEeylP6vhO63XvA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_B6cScCwjEeylP6vhO63XvA" describedService__SEFF="_2pY08CwiEeylP6vhO63XvA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_B6cScSwjEeylP6vhO63XvA" successor_AbstractAction="_DnJr4CwjEeylP6vhO63XvA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_B6cSciwjEeylP6vhO63XvA" predecessor_AbstractAction="_DnJr4CwjEeylP6vhO63XvA"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_DnJr4CwjEeylP6vhO63XvA" entityName="ExternalCallAction1" predecessor_AbstractAction="_B6cScSwjEeylP6vhO63XvA" successor_AbstractAction="_B6cSciwjEeylP6vhO63XvA" calledService_ExternalService="_ecImwCwiEeylP6vhO63XvA" role_ExternalService="__o1cMCwiEeylP6vhO63XvA"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_7Ov2gCwiEeylP6vhO63XvA" entityName="DMSServerApplication">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_9omCwCwiEeylP6vhO63XvA" entityName="Provide.DMSServer" providedInterface__OperationProvidedRole="_3t5fkCwaEeylP6vhO63XvA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_9onQ4CwiEeylP6vhO63XvA" describedService__SEFF="_ecImwCwiEeylP6vhO63XvA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_9onQ4SwiEeylP6vhO63XvA" successor_AbstractAction="_9onQ4iwiEeylP6vhO63XvA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_9onQ4iwiEeylP6vhO63XvA" predecessor_AbstractAction="_9onQ4SwiEeylP6vhO63XvA"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_MPdlgCwjEeylP6vhO63XvA" entityName="CorporateApplicationClient">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Q-dEMCwjEeylP6vhO63XvA" entityName="CorporateApplicationClient.Workstation.OperationProvidedRole1" providedInterface__OperationProvidedRole="_-quHwCwaEeylP6vhO63XvA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_Jy5PkC2bEeyiUoiCEbquLw" entityName="CorporateApplicationClient.NetworkStorage.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_8mhKUC2ZEeyiUoiCEbquLw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_Q-7lUCwjEeylP6vhO63XvA" describedService__SEFF="_JCMYQCwjEeylP6vhO63XvA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Q-8MYCwjEeylP6vhO63XvA" successor_AbstractAction="_K5QasC2bEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Q-8MYSwjEeylP6vhO63XvA" predecessor_AbstractAction="_K5QasC2bEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_K5QasC2bEeyiUoiCEbquLw" entityName="ExternalCallAction1" predecessor_AbstractAction="_Q-8MYCwjEeylP6vhO63XvA" successor_AbstractAction="_Q-8MYSwjEeylP6vhO63XvA" calledService_ExternalService="_-tEAEC2ZEeyiUoiCEbquLw" role_ExternalService="_Jy5PkC2bEeyiUoiCEbquLw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_TLgFEC2YEeyiUoiCEbquLw" entityName="CallCenterApplication">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_ZG_MEC2YEeyiUoiCEbquLw" entityName="BasicComponent5.CallCenter.OperationProvidedRole1" providedInterface__OperationProvidedRole="_0l2JgCwaEeylP6vhO63XvA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ZHSHAC2YEeyiUoiCEbquLw" describedService__SEFF="_saFC0C2XEeyiUoiCEbquLw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_ZHSHAS2YEeyiUoiCEbquLw" successor_AbstractAction="_ZHSHAi2YEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_ZHSHAi2YEeyiUoiCEbquLw" predecessor_AbstractAction="_ZHSHAS2YEeyiUoiCEbquLw"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ZIvfkC2YEeyiUoiCEbquLw" describedService__SEFF="_rZ_e0C2XEeyiUoiCEbquLw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_ZIvfkS2YEeyiUoiCEbquLw" successor_AbstractAction="_ZIvfki2YEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_ZIvfki2YEeyiUoiCEbquLw" predecessor_AbstractAction="_ZIvfkS2YEeyiUoiCEbquLw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_uEs8IC2YEeyiUoiCEbquLw" entityName="DomainControler">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_xWqcIC2YEeyiUoiCEbquLw" entityName="DomainControler.DomainControl.OperationProvidedRole1" providedInterface__OperationProvidedRole="_tCCZ0CwaEeylP6vhO63XvA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_xWrqQC2YEeyiUoiCEbquLw" describedService__SEFF="_OZRFIC2YEeyiUoiCEbquLw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_xWsRUC2YEeyiUoiCEbquLw" successor_AbstractAction="_xWsRUS2YEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_xWsRUS2YEeyiUoiCEbquLw" predecessor_AbstractAction="_xWsRUC2YEeyiUoiCEbquLw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_FdgjsC2bEeyiUoiCEbquLw" entityName="StorageApplication">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_G-tQsC2bEeyiUoiCEbquLw" entityName="BasicComponent7.NetworkStorage.OperationProvidedRole1" providedInterface__OperationProvidedRole="_8mhKUC2ZEeyiUoiCEbquLw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_G-t3wC2bEeyiUoiCEbquLw" describedService__SEFF="_-tEAEC2ZEeyiUoiCEbquLw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_G-t3wS2bEeyiUoiCEbquLw" successor_AbstractAction="_G-t3wi2bEeyiUoiCEbquLw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_G-t3wi2bEeyiUoiCEbquLw" predecessor_AbstractAction="_G-t3wS2bEeyiUoiCEbquLw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_tCCZ0CwaEeylP6vhO63XvA" entityName="DomainControl">
+    <signatures__OperationInterface id="_OZRFIC2YEeyiUoiCEbquLw" entityName="setAccessRights"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_wMaEECwaEeylP6vhO63XvA" entityName="VPN-Server">
+    <signatures__OperationInterface id="_hyv9QCwiEeylP6vhO63XvA" entityName="dialIn"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_0l2JgCwaEeylP6vhO63XvA" entityName="CallCenter">
+    <signatures__OperationInterface id="_rZ_e0C2XEeyiUoiCEbquLw" entityName="dial"/>
+    <signatures__OperationInterface id="_saFC0C2XEeyiUoiCEbquLw" entityName="stop"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_3t5fkCwaEeylP6vhO63XvA" entityName="DMServer">
+    <signatures__OperationInterface id="_ecImwCwiEeylP6vhO63XvA" entityName="configurePowerGrid"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_9ZiMsCwaEeylP6vhO63XvA" entityName="DMSClient">
+    <signatures__OperationInterface id="_2pY08CwiEeylP6vhO63XvA" entityName="configurePowerGrid"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_-quHwCwaEeylP6vhO63XvA" entityName="OfficeSoftware">
+    <signatures__OperationInterface id="_JCMYQCwjEeylP6vhO63XvA" entityName="openDocument"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_8mhKUC2ZEeyiUoiCEbquLw" entityName="NetworkStorage">
+    <signatures__OperationInterface id="_-tEAEC2ZEeyiUoiCEbquLw" entityName="store"/>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_jMpvcCwiEeylP6vhO63XvA" entityName="User">
+    <innerDeclaration_CompositeDataType entityName="username">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="password">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+</repository:Repository>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_cGDsMJSZEeyjlrv9ryW3Zw" entityName="ProductionNetwork" connectedResourceContainers_LinkingResource="_Wy_3IJSZEeyjlrv9ryW3Zw _ZOQ_sJSZEeyjlrv9ryW3Zw _ag33EJSZEeyjlrv9ryW3Zw"/>
+  <resourceContainer_ResourceEnvironment id="_Wy_3IJSZEeyjlrv9ryW3Zw" entityName="StorageServer"/>
+  <resourceContainer_ResourceEnvironment id="_ZOQ_sJSZEeyjlrv9ryW3Zw" entityName="TerminalServer"/>
+  <resourceContainer_ResourceEnvironment id="_ag33EJSZEeyjlrv9ryW3Zw" entityName="MachineController"/>
+</resourceenvironment:ResourceEnvironment>

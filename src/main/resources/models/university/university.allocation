@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_bfXI4LS0EeyIO4nD9VIyMw" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="gradeManagement.resourceenvironment#/"/>
+  <system_Allocation href="gradeManagement.system#_pajG0LSzEeyIO4nD9VIyMw"/>
+  <allocationContexts_Allocation id="_jNTE8LS0EeyIO4nD9VIyMw" entityName="Allocation_Assembly_ExternalGrade">
+    <resourceContainer_AllocationContext href="gradeManagement.resourceenvironment#_Q7AZULS0EeyIO4nD9VIyMw"/>
+    <assemblyContext_AllocationContext href="gradeManagement.system#_1QG_kLSzEeyIO4nD9VIyMw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_jai2wLS0EeyIO4nD9VIyMw" entityName="Allocation_Assembly_InternalGradeManagement">
+    <resourceContainer_AllocationContext href="gradeManagement.resourceenvironment#_Q7AZULS0EeyIO4nD9VIyMw"/>
+    <assemblyContext_AllocationContext href="gradeManagement.system#_ABQ1ALS0EeyIO4nD9VIyMw"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

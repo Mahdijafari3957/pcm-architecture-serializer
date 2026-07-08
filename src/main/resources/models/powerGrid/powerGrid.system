@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_T1pTwCwjEeylP6vhO63XvA" entityName="PowerGrid">
+  <assemblyContexts__ComposedStructure id="_V4494CwjEeylP6vhO63XvA" entityName="AssemblyWithoutRights">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_MPdlgCwjEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Q-4sUCzDEeyiUoiCEbquLw" entityName="Assembly_DMSClientApplication">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_4XkOACwiEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_UsPu4CzDEeyiUoiCEbquLw" entityName="Assembly_DMSServerApplication">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_7Ov2gCwiEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_17uiwC2YEeyiUoiCEbquLw" entityName="Assembly_DomainControler">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_uEs8IC2YEeyiUoiCEbquLw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_b0b0UC2ZEeyiUoiCEbquLw" entityName="AssemblyWithVPNRights">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_MPdlgCwjEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_snL_0C2ZEeyiUoiCEbquLw" entityName="ICS-VPN-Bridge">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_u1qZ8CwiEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ycvd8C2ZEeyiUoiCEbquLw" entityName="Assembly_CallCenterApplication">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_TLgFEC2YEeyiUoiCEbquLw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_TK0BMC2bEeyiUoiCEbquLw" entityName="Assembly_StorageApplication">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_FdgjsC2bEeyiUoiCEbquLw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_1cglcC2_EeyiUoiCEbquLw" entityName="ExternalVPNBridge">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="powerGrid.repository#_u1qZ8CwiEeylP6vhO63XvA"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_XBkAcCzDEeyiUoiCEbquLw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_Q-4sUCzDEeyiUoiCEbquLw" providingAssemblyContext_AssemblyConnector="_UsPu4CzDEeyiUoiCEbquLw">
+    <providedRole_AssemblyConnector href="powerGrid.repository#_9omCwCwiEeylP6vhO63XvA"/>
+    <requiredRole_AssemblyConnector href="powerGrid.repository#__o1cMCwiEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_9gt-MC2YEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_54IG4C2YEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_17uiwC2YEeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_xWqcIC2YEeyiUoiCEbquLw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_CUU3IC2ZEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="__ob4oC2YEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_Q-4sUCzDEeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_B578ICwjEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_nyFSEC2ZEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_FjjzQC2ZEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_b0b0UC2ZEeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_Q-dEMCwjEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_oW7rkC2ZEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_FjjzQC2ZEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_V4494CwjEeylP6vhO63XvA">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_Q-dEMCwjEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_w-5m8C2ZEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_vGkzYC2ZEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_snL_0C2ZEeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_xWvPkCwiEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_4FwU4C2ZEeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_1l1V0C2ZEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_ycvd8C2ZEeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_ZG_MEC2YEeyiUoiCEbquLw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_igBQoC2bEeyiUoiCEbquLw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_b0b0UC2ZEeyiUoiCEbquLw" providingAssemblyContext_AssemblyConnector="_TK0BMC2bEeyiUoiCEbquLw">
+    <providedRole_AssemblyConnector href="powerGrid.repository#_G-tQsC2bEeyiUoiCEbquLw"/>
+    <requiredRole_AssemblyConnector href="powerGrid.repository#_Jy5PkC2bEeyiUoiCEbquLw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_lPlOMC2bEeyiUoiCEbquLw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_V4494CwjEeylP6vhO63XvA" providingAssemblyContext_AssemblyConnector="_TK0BMC2bEeyiUoiCEbquLw">
+    <providedRole_AssemblyConnector href="powerGrid.repository#_G-tQsC2bEeyiUoiCEbquLw"/>
+    <requiredRole_AssemblyConnector href="powerGrid.repository#_Jy5PkC2bEeyiUoiCEbquLw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="__9Lu4C2_EeyiUoiCEbquLw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_vGkzYC2ZEeyiUoiCEbquLw" assemblyContext_ProvidedDelegationConnector="_1cglcC2_EeyiUoiCEbquLw">
+    <innerProvidedRole_ProvidedDelegationConnector href="powerGrid.repository#_xWvPkCwiEeylP6vhO63XvA"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_54IG4C2YEeyiUoiCEbquLw" entityName="DomainControlProvidedRole">
+    <providedInterface__OperationProvidedRole href="powerGrid.repository#_tCCZ0CwaEeylP6vhO63XvA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="__ob4oC2YEeyiUoiCEbquLw" entityName="DMSClientProvidedRole">
+    <providedInterface__OperationProvidedRole href="powerGrid.repository#_9ZiMsCwaEeylP6vhO63XvA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FjjzQC2ZEeyiUoiCEbquLw" entityName="OfficeSoftwareProvidedRole">
+    <providedInterface__OperationProvidedRole href="powerGrid.repository#_-quHwCwaEeylP6vhO63XvA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_vGkzYC2ZEeyiUoiCEbquLw" entityName="VPN-ServerProvidedRole">
+    <providedInterface__OperationProvidedRole href="powerGrid.repository#_wMaEECwaEeylP6vhO63XvA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_1l1V0C2ZEeyiUoiCEbquLw" entityName="CallCenterProvidedRole">
+    <providedInterface__OperationProvidedRole href="powerGrid.repository#_0l2JgCwaEeylP6vhO63XvA"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

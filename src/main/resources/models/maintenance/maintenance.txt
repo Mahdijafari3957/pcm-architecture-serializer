@@ -1,0 +1,7 @@
+The scenario involves two organizations: a manufacturer (M) that owns and operates production machines, 
+and a service contractor (S) responsible for maintaining and repairing those machines. 
+During normal operation, an S technician can perform maintenance via a terminal, 
+while the machine stores its data on an external storage system. 
+However, the technician must not be allowed to access the machine’s log data under normal conditions, 
+since the logs may contain sensitive information (e.g., employee names at M or detailed operational data). 
+In the event of a machine failure, an S technician is permitted limited access to the log data for troubleshooting.

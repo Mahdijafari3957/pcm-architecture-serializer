@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sidechannel:SideChannelRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sidechannel="edu.kit.pentest.sidechannel">
+  <sideChannels name="Timing"/>
+  <sideChannels name="Visual"/>
+  <sideChannels name="Storage"/>
+  <sideChannelAnnotations xsi:type="sidechannel:ResourceSideChannelAnnotation" sideChannel="//@sideChannels.0">
+    <architecturalElement href="bank.resourceenvironment#_e2sfQD62EeulRPEeT0f8DQ"/>
+  </sideChannelAnnotations>
+  <sideChannelAnnotations xsi:type="sidechannel:ResourceSideChannelAnnotation" sideChannel="//@sideChannels.2">
+    <architecturalElement href="bank.resourceenvironment#_fSAiQD62EeulRPEeT0f8DQ"/>
+  </sideChannelAnnotations>
+  <sideChannelAnnotations xsi:type="sidechannel:ResourceSideChannelAnnotation" sideChannel="//@sideChannels.1">
+    <architecturalElement href="bank.resourceenvironment#_fSAiQD62EeulRPEeT0f8DQ"/>
+  </sideChannelAnnotations>
+  <sideChannelAnnotations xsi:type="sidechannel:ResourceSideChannelAnnotation" sideChannel="//@sideChannels.0">
+    <architecturalElement href="bank.resourceenvironment#_fSAiQD62EeulRPEeT0f8DQ"/>
+  </sideChannelAnnotations>
+</sidechannel:SideChannelRepository>

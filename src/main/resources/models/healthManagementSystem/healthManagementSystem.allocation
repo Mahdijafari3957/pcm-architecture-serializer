@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_yGB6YNBcEfClkdDGvFel8g" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="AppointmentManagement.resourceenvironment#/"/>
+  <system_Allocation href="AppointmentManagement.system#_m4Ge0NBbEfClkdDGvFel8g"/>
+  <allocationContexts_Allocation id="_9eAfQNBcEfClkdDGvFel8g" entityName="Allocation_Assembly_Patient Database Management">
+    <resourceContainer_AllocationContext href="AppointmentManagement.resourceenvironment#_WZN1ENBcEfClkdDGvFel8g"/>
+    <assemblyContext_AllocationContext href="AppointmentManagement.system#_w9_wwNBbEfClkdDGvFel8g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_-bv54NBcEfClkdDGvFel8g" entityName="Allocation_Assembly_Appointment Management">
+    <resourceContainer_AllocationContext href="AppointmentManagement.resourceenvironment#_J4Gd4NBcEfClkdDGvFel8g"/>
+    <assemblyContext_AllocationContext href="AppointmentManagement.system#_tbAyMNBbEfClkdDGvFel8g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__VFVoNBcEfClkdDGvFel8g" entityName="Allocation_Assembly_User Interface Patient">
+    <resourceContainer_AllocationContext href="AppointmentManagement.resourceenvironment#_cYaXYdBcEfClkdDGvFel8g"/>
+    <assemblyContext_AllocationContext href="AppointmentManagement.system#_xzPWsNBbEfClkdDGvFel8g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AARnsNBdEfClkdDGvFel8g" entityName="Allocation_Assembly_User Interface Physician">
+    <resourceContainer_AllocationContext href="AppointmentManagement.resourceenvironment#_cYaXYdBcEfClkdDGvFel8g"/>
+    <assemblyContext_AllocationContext href="AppointmentManagement.system#_ym6PUNBbEfClkdDGvFel8g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_ApPsMNBdEfClkdDGvFel8g" entityName="Allocation_Assembly_User Interface Receptionist">
+    <resourceContainer_AllocationContext href="AppointmentManagement.resourceenvironment#_cYaXYdBcEfClkdDGvFel8g"/>
+    <assemblyContext_AllocationContext href="AppointmentManagement.system#_zNXyYNBbEfClkdDGvFel8g"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

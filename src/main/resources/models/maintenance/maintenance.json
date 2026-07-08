@@ -1,0 +1,81 @@
+{
+  "modelType" : "Palladio Component Model Architecture",
+  "components" : [ {
+    "name" : "MachineComponent",
+    "provides" : [ "Machine" ],
+    "requires" : [ "Storage" ]
+  }, {
+    "name" : "ProductionStorageComponent",
+    "provides" : [ "Storage" ],
+    "requires" : [ ]
+  }, {
+    "name" : "TerminalComponent",
+    "provides" : [ "MaintenanceTerminal" ],
+    "requires" : [ "Machine" ]
+  }, {
+    "name" : "ProductStorage",
+    "provides" : [ "Storage" ],
+    "requires" : [ ]
+  } ],
+  "interfaces" : [ {
+    "name" : "Machine",
+    "operations" : [ "access", "saveLogs" ]
+  }, {
+    "name" : "MaintenanceTerminal",
+    "operations" : [ "access" ]
+  }, {
+    "name" : "Storage",
+    "operations" : [ "store", "get" ]
+  } ],
+  "systemAssembly" : {
+    "systemName" : "MaintenanceSystem",
+    "assemblies" : [ {
+      "name" : "Assembly_MachineComponent",
+      "component" : "MachineComponent",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_ProductionStorageComponent",
+      "component" : "ProductionStorageComponent",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_ProductStorage",
+      "component" : "ProductStorage",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_TerminalComponent",
+      "component" : "TerminalComponent",
+      "componentType" : "BasicComponent"
+    } ]
+  },
+  "connectors" : [ {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_TerminalComponent",
+    "to" : "Assembly_MachineComponent",
+    "interface" : "Machine"
+  }, {
+    "name" : "StorageMachine",
+    "from" : "Assembly_MachineComponent",
+    "to" : "Assembly_ProductionStorageComponent",
+    "interface" : "Storage"
+  } ],
+  "resourceEnvironment" : {
+    "resourceContainers" : [ "StorageServer", "TerminalServer", "MachineController" ],
+    "networks" : [ {
+      "name" : "ProductionNetwork",
+      "connects" : [ "StorageServer", "TerminalServer", "MachineController" ]
+    } ]
+  },
+  "allocation" : [ {
+    "assembly" : "Assembly_TerminalComponent",
+    "resourceContainer" : "TerminalServer"
+  }, {
+    "assembly" : "Assembly_MachineComponent",
+    "resourceContainer" : "MachineController"
+  }, {
+    "assembly" : "Assembly_ProductionStorageComponent",
+    "resourceContainer" : "StorageServer"
+  }, {
+    "assembly" : "Assembly_ProductStorage",
+    "resourceContainer" : "StorageServer"
+  } ]
+}

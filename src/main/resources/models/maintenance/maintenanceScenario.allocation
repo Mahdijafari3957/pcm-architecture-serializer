@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_fS8e8JSZEeyjlrv9ryW3Zw" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="maintenanceScenario.resourceenvironment#/"/>
+  <system_Allocation href="maintenanceScenario.system#_0IZgUJSYEeyjlrv9ryW3Zw"/>
+  <allocationContexts_Allocation id="_lr16sJSZEeyjlrv9ryW3Zw" entityName="Allocation_Assembly_TerminalComponent">
+    <resourceContainer_AllocationContext href="maintenanceScenario.resourceenvironment#_ZOQ_sJSZEeyjlrv9ryW3Zw"/>
+    <assemblyContext_AllocationContext href="maintenanceScenario.system#_8WGhkJSYEeyjlrv9ryW3Zw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_nL4xIJSZEeyjlrv9ryW3Zw" entityName="Allocation_Assembly_MachineComponent">
+    <resourceContainer_AllocationContext href="maintenanceScenario.resourceenvironment#_ag33EJSZEeyjlrv9ryW3Zw"/>
+    <assemblyContext_AllocationContext href="maintenanceScenario.system#_4lwccJSYEeyjlrv9ryW3Zw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_nr_0kJSZEeyjlrv9ryW3Zw" entityName="Allocation_Assembly_ProductionStorageComponent">
+    <resourceContainer_AllocationContext href="maintenanceScenario.resourceenvironment#_Wy_3IJSZEeyjlrv9ryW3Zw"/>
+    <assemblyContext_AllocationContext href="maintenanceScenario.system#_53Jy4JSYEeyjlrv9ryW3Zw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_n6gxsJSZEeyjlrv9ryW3Zw" entityName="Allocation_Assembly_ProductStorage">
+    <resourceContainer_AllocationContext href="maintenanceScenario.resourceenvironment#_Wy_3IJSZEeyjlrv9ryW3Zw"/>
+    <assemblyContext_AllocationContext href="maintenanceScenario.system#_7bi90JSYEeyjlrv9ryW3Zw"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

@@ -1,0 +1,108 @@
+{
+  "modelType" : "Palladio Component Model Architecture",
+  "components" : [ {
+    "name" : "BranchOffice",
+    "provides" : [ "CustomerHandling" ],
+    "requires" : [ ]
+  }, {
+    "name" : "CustomerHandling",
+    "provides" : [ "CustomerHandling" ],
+    "requires" : [ "CustomerStore" ]
+  }, {
+    "name" : "CustomerStore",
+    "provides" : [ "CustomerStore" ],
+    "requires" : [ ]
+  }, {
+    "name" : "CustomerMovement",
+    "provides" : [ "CustomerMovement" ],
+    "requires" : [ "CustomerHandling" ]
+  } ],
+  "interfaces" : [ {
+    "name" : "CustomerHandling",
+    "operations" : [ "findCustomer", "registerCustomer", "determineCreditLine" ]
+  }, {
+    "name" : "CustomerStore",
+    "operations" : [ "addCustomer", "getCustomer" ]
+  }, {
+    "name" : "CustomerMovement",
+    "operations" : [ "moveCustomer" ]
+  } ],
+  "systemAssembly" : {
+    "systemName" : "New System",
+    "assemblies" : [ {
+      "name" : "Assembly_BranchOffice_USA",
+      "component" : "BranchOffice",
+      "componentType" : "CompositeComponent",
+      "innerStructure" : {
+        "assemblies" : [ {
+          "name" : "Assembly_CustomerStore",
+          "component" : "CustomerStore",
+          "componentType" : "BasicComponent"
+        }, {
+          "name" : "Assembly_CustomerHandling",
+          "component" : "CustomerHandling",
+          "componentType" : "BasicComponent"
+        } ],
+        "connectors" : [ {
+          "name" : "newAssemblyConnector",
+          "from" : "Assembly_CustomerHandling",
+          "to" : "Assembly_CustomerStore",
+          "interface" : "CustomerStore"
+        } ]
+      }
+    }, {
+      "name" : "Assembly_BranchOffice_Asia",
+      "component" : "BranchOffice",
+      "componentType" : "CompositeComponent",
+      "innerStructure" : {
+        "assemblies" : [ {
+          "name" : "Assembly_CustomerStore",
+          "component" : "CustomerStore",
+          "componentType" : "BasicComponent"
+        }, {
+          "name" : "Assembly_CustomerHandling",
+          "component" : "CustomerHandling",
+          "componentType" : "BasicComponent"
+        } ],
+        "connectors" : [ {
+          "name" : "newAssemblyConnector",
+          "from" : "Assembly_CustomerHandling",
+          "to" : "Assembly_CustomerStore",
+          "interface" : "CustomerStore"
+        } ]
+      }
+    }, {
+      "name" : "Assembly_CustomerMovement_USA-to_Asia",
+      "component" : "CustomerMovement",
+      "componentType" : "BasicComponent"
+    } ]
+  },
+  "connectors" : [ {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_CustomerMovement_USA-to_Asia",
+    "to" : "Assembly_BranchOffice_USA",
+    "interface" : "CustomerHandling"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_CustomerMovement_USA-to_Asia",
+    "to" : "Assembly_BranchOffice_Asia",
+    "interface" : "CustomerHandling"
+  } ],
+  "resourceEnvironment" : {
+    "resourceContainers" : [ "Asia", "USA" ],
+    "networks" : [ {
+      "name" : "LinkingResource1",
+      "connects" : [ "Asia", "USA" ]
+    } ]
+  },
+  "allocation" : [ {
+    "assembly" : "Assembly_BranchOffice_Asia",
+    "resourceContainer" : "Asia"
+  }, {
+    "assembly" : "Assembly_BranchOffice_USA",
+    "resourceContainer" : "USA"
+  }, {
+    "assembly" : "Assembly_CustomerMovement_USA-to_Asia",
+    "resourceContainer" : "USA"
+  } ]
+}

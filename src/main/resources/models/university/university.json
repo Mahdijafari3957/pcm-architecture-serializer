@@ -1,0 +1,39 @@
+{
+  "modelType" : "Palladio Component Model Architecture",
+  "components" : [ {
+    "name" : "GradeManagementComponent",
+    "provides" : [ "GradeManagement" ],
+    "requires" : [ ]
+  } ],
+  "interfaces" : [ {
+    "name" : "GradeManagement",
+    "operations" : [ "assign", "receive", "view" ]
+  } ],
+  "systemAssembly" : {
+    "systemName" : "GradeManagementSystem",
+    "assemblies" : [ {
+      "name" : "Assembly_ExternalGrade",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_InternalGradeManagement",
+      "component" : "aName",
+      "componentType" : "BasicComponent"
+    } ]
+  },
+  "connectors" : [ ],
+  "resourceEnvironment" : {
+    "resourceContainers" : [ "Server" ],
+    "networks" : [ {
+      "name" : "LinkingResource1",
+      "connects" : [ "Server" ]
+    } ]
+  },
+  "allocation" : [ {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  }, {
+    "assembly" : "aName",
+    "resourceContainer" : "aName"
+  } ]
+}

@@ -1,0 +1,6 @@
+The scenario describes a data-flow-based ABAC banking system. 
+Different branches with different customer types (celebrity and regular) exist in it. 
+Based on the customer type, either a manager needs to handle the requests or a regular clerk. 
+In addition, the access is restricted to the locations.
+For instance, a clerk in Asia cannot access the American banking operations.
+Besides the handling of accounts, regular customer can also transfer their accounts between different branches.

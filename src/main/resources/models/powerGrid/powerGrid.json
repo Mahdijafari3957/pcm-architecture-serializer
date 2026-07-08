@@ -1,0 +1,148 @@
+{
+  "modelType" : "Palladio Component Model Architecture",
+  "components" : [ {
+    "name" : "VPNApplication",
+    "provides" : [ "VPN-Server" ],
+    "requires" : [ ]
+  }, {
+    "name" : "DMSClientApplication",
+    "provides" : [ "DMSClient" ],
+    "requires" : [ "DMServer" ]
+  }, {
+    "name" : "DMSServerApplication",
+    "provides" : [ "DMServer" ],
+    "requires" : [ ]
+  }, {
+    "name" : "CorporateApplicationClient",
+    "provides" : [ "OfficeSoftware" ],
+    "requires" : [ "NetworkStorage" ]
+  }, {
+    "name" : "CallCenterApplication",
+    "provides" : [ "CallCenter" ],
+    "requires" : [ ]
+  }, {
+    "name" : "DomainControler",
+    "provides" : [ "DomainControl" ],
+    "requires" : [ ]
+  }, {
+    "name" : "StorageApplication",
+    "provides" : [ "NetworkStorage" ],
+    "requires" : [ ]
+  } ],
+  "interfaces" : [ {
+    "name" : "DomainControl",
+    "operations" : [ "setAccessRights" ]
+  }, {
+    "name" : "VPN-Server",
+    "operations" : [ "dialIn" ]
+  }, {
+    "name" : "CallCenter",
+    "operations" : [ "dial", "stop" ]
+  }, {
+    "name" : "DMServer",
+    "operations" : [ "configurePowerGrid" ]
+  }, {
+    "name" : "DMSClient",
+    "operations" : [ "configurePowerGrid" ]
+  }, {
+    "name" : "OfficeSoftware",
+    "operations" : [ "openDocument" ]
+  }, {
+    "name" : "NetworkStorage",
+    "operations" : [ "store" ]
+  } ],
+  "systemAssembly" : {
+    "systemName" : "PowerGrid",
+    "assemblies" : [ {
+      "name" : "AssemblyWithoutRights",
+      "component" : "CorporateApplicationClient",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_DMSClientApplication",
+      "component" : "DMSClientApplication",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_DMSServerApplication",
+      "component" : "DMSServerApplication",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_DomainControler",
+      "component" : "DomainControler",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "AssemblyWithVPNRights",
+      "component" : "CorporateApplicationClient",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "ICS-VPN-Bridge",
+      "component" : "VPNApplication",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_CallCenterApplication",
+      "component" : "CallCenterApplication",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "Assembly_StorageApplication",
+      "component" : "StorageApplication",
+      "componentType" : "BasicComponent"
+    }, {
+      "name" : "ExternalVPNBridge",
+      "component" : "VPNApplication",
+      "componentType" : "BasicComponent"
+    } ]
+  },
+  "connectors" : [ {
+    "name" : "newAssemblyConnector",
+    "from" : "Assembly_DMSClientApplication",
+    "to" : "Assembly_DMSServerApplication",
+    "interface" : "DMServer"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "AssemblyWithVPNRights",
+    "to" : "Assembly_StorageApplication",
+    "interface" : "NetworkStorage"
+  }, {
+    "name" : "newAssemblyConnector",
+    "from" : "AssemblyWithoutRights",
+    "to" : "Assembly_StorageApplication",
+    "interface" : "NetworkStorage"
+  } ],
+  "resourceEnvironment" : {
+    "resourceContainers" : [ "VPNBridge", "VPNBridgeExternal", "Workstation01", "CallCenter", "DataCenter", "DMSServer", "DMSClientApplication", "Workstation02" ],
+    "networks" : [ {
+      "name" : "ICSNetwork",
+      "connects" : [ "VPNBridge", "DMSClientApplication", "DMSServer" ]
+    }, {
+      "name" : "CorporateNetwork",
+      "connects" : [ "VPNBridge", "VPNBridgeExternal", "Workstation01", "CallCenter", "DataCenter", "Workstation02" ]
+    } ]
+  },
+  "allocation" : [ {
+    "assembly" : "Assembly_DMSClientApplication",
+    "resourceContainer" : "DMSClientApplication"
+  }, {
+    "assembly" : "Assembly_DMSServerApplication",
+    "resourceContainer" : "DMSServer"
+  }, {
+    "assembly" : "Assembly_CallCenterApplication",
+    "resourceContainer" : "CallCenter"
+  }, {
+    "assembly" : "Assembly_DomainControler",
+    "resourceContainer" : "DataCenter"
+  }, {
+    "assembly" : "Assembly_StorageApplication",
+    "resourceContainer" : "DataCenter"
+  }, {
+    "assembly" : "AssemblyWithoutRights",
+    "resourceContainer" : "Workstation01"
+  }, {
+    "assembly" : "ICS-VPN-Bridge",
+    "resourceContainer" : "VPNBridge"
+  }, {
+    "assembly" : "AssemblyWithVPNRights",
+    "resourceContainer" : "Workstation02"
+  }, {
+    "assembly" : "ExternalVPNBridge",
+    "resourceContainer" : "VPNBridgeExternal"
+  } ]
+}

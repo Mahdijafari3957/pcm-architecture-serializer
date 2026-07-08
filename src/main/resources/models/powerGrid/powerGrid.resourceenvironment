@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_HyUlcCwbEeylP6vhO63XvA" entityName="ICSNetwork" connectedResourceContainers_LinkingResource="_RUWVUCwbEeylP6vhO63XvA _FgAvICwcEeylP6vhO63XvA _DnLlQCwcEeylP6vhO63XvA"/>
+  <linkingResources__ResourceEnvironment id="_K4S34CwbEeylP6vhO63XvA" entityName="CorporateNetwork" connectedResourceContainers_LinkingResource="_RUWVUCwbEeylP6vhO63XvA _V9xXgCwbEeylP6vhO63XvA _bcPLUCwbEeylP6vhO63XvA _cyRxMCwbEeylP6vhO63XvA _eGWBICwbEeylP6vhO63XvA _RGEX4C2_EeyiUoiCEbquLw"/>
+  <resourceContainer_ResourceEnvironment id="_RUWVUCwbEeylP6vhO63XvA" entityName="VPNBridge"/>
+  <resourceContainer_ResourceEnvironment id="_V9xXgCwbEeylP6vhO63XvA" entityName="VPNBridgeExternal"/>
+  <resourceContainer_ResourceEnvironment id="_bcPLUCwbEeylP6vhO63XvA" entityName="Workstation01"/>
+  <resourceContainer_ResourceEnvironment id="_cyRxMCwbEeylP6vhO63XvA" entityName="CallCenter"/>
+  <resourceContainer_ResourceEnvironment id="_eGWBICwbEeylP6vhO63XvA" entityName="DataCenter"/>
+  <resourceContainer_ResourceEnvironment id="_DnLlQCwcEeylP6vhO63XvA" entityName="DMSServer"/>
+  <resourceContainer_ResourceEnvironment id="_FgAvICwcEeylP6vhO63XvA" entityName="DMSClientApplication"/>
+  <resourceContainer_ResourceEnvironment id="_RGEX4C2_EeyiUoiCEbquLw" entityName="Workstation02"/>
+</resourceenvironment:ResourceEnvironment>

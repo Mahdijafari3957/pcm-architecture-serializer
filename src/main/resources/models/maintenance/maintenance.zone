@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone:ZoneRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:zone="edu.kit.pentest.zone">
+  <zones name="Machine"/>
+  <zones name="MaintenanceTerminal" confidentialityLevel="1"/>
+  <zones name="StorageHigh" confidentialityLevel="1"/>
+  <zones name="StorageLow"/>
+  <zoneAnnotations zone="//@zones.0">
+    <interface xsi:type="repository:OperationInterface" href="maintenanceScenario.repository#_RI-psJSQEeyOldzBRFqWVw"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.1">
+    <interface xsi:type="repository:OperationInterface" href="maintenanceScenario.repository#_gpcG4JSQEeyOldzBRFqWVw"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.2">
+    <interface xsi:type="repository:OperationInterface" href="maintenanceScenario.repository#_jdzE4JSQEeyOldzBRFqWVw"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.3">
+    <interface xsi:type="repository:OperationInterface" href="maintenanceScenario.repository#_jdzE4JSQEeyOldzBRFqWVw"/>
+  </zoneAnnotations>
+</zone:ZoneRepository>

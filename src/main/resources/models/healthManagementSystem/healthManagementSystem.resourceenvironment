@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_d0yOwNBcEfClkdDGvFel8g" entityName="InhouseConnection" connectedResourceContainers_LinkingResource="_cYaXYdBcEfClkdDGvFel8g _J4Gd4NBcEfClkdDGvFel8g"/>
+  <linkingResources__ResourceEnvironment id="_spsNgNBcEfClkdDGvFel8g" entityName="ExternalConnection" connectedResourceContainers_LinkingResource="_J4Gd4NBcEfClkdDGvFel8g _WZN1ENBcEfClkdDGvFel8g"/>
+  <resourceContainer_ResourceEnvironment id="_J4Gd4NBcEfClkdDGvFel8g" entityName="AppointmentManagementContainer"/>
+  <resourceContainer_ResourceEnvironment id="_WZN1ENBcEfClkdDGvFel8g" entityName="DatabaseManagementContainer"/>
+  <resourceContainer_ResourceEnvironment id="_cYaXYdBcEfClkdDGvFel8g" entityName="UserInterfaceContainer"/>
+</resourceenvironment:ResourceEnvironment>

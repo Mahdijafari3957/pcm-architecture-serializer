@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_RdOVkLS0EeyIO4nD9VIyMw" entityName="LinkingResource1" connectedResourceContainers_LinkingResource="_Q7AZULS0EeyIO4nD9VIyMw"/>
+  <resourceContainer_ResourceEnvironment id="_Q7AZULS0EeyIO4nD9VIyMw" entityName="Server"/>
+</resourceenvironment:ResourceEnvironment>

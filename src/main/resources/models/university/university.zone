@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone:ZoneRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:zone="edu.kit.pentest.zone">
+  <zones name="High" confidentialityLevel="1"/>
+  <zones name="Low"/>
+  <zoneAnnotations zone="//@zones.0">
+    <interface xsi:type="repository:OperationInterface" href="gradeManagement.repository#_JFoHkLSrEeyIO4nD9VIyMw"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.1">
+    <interface xsi:type="repository:OperationInterface" href="gradeManagement.repository#_JFoHkLSrEeyIO4nD9VIyMw"/>
+  </zoneAnnotations>
+</zone:ZoneRepository>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone:ZoneRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:zone="edu.kit.pentest.zone">
+  <zones name="DomainControl" confidentialityLevel="2"/>
+  <zones name="VPN-Server" confidentialityLevel="1"/>
+  <zones name="CallCenter"/>
+  <zones name="DMServer" confidentialityLevel="2"/>
+  <zones name="DMSClient" confidentialityLevel="1"/>
+  <zones name="OfficeSoftware" confidentialityLevel="1"/>
+  <zones name="NetworkStorage" confidentialityLevel="1"/>
+  <zoneAnnotations zone="//@zones.2">
+    <interface xsi:type="repository:OperationInterface" href="powerGrid.repository#_0l2JgCwaEeylP6vhO63XvA"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.4">
+    <interface xsi:type="repository:OperationInterface" href="powerGrid.repository#_9ZiMsCwaEeylP6vhO63XvA"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.3">
+    <interface xsi:type="repository:OperationInterface" href="powerGrid.repository#_3t5fkCwaEeylP6vhO63XvA"/>
+  </zoneAnnotations>
+  <zoneAnnotations zone="//@zones.0">
+    <interface xsi:type="repository:OperationInterface" href="powerGrid.repository#_tCCZ0CwaEeylP6vhO63XvA"/>
+  </zoneAnnotations>
+  <zoneAnnotations/>
+  <zoneAnnotations/>
+  <zoneAnnotations/>
+</zone:ZoneRepository>

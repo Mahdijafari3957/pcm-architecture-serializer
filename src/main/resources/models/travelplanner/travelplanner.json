@@ -1,0 +1,38 @@
+{
+  "architecture_type": "Palladio Component Model",
+  "system_name": "ExampleScenario",
+  "components": [
+    {"name": "TravelAgency", "id": "_SaUYgMNzEeWPE-QAhbUzuQ"},
+    {"name": "Airline", "id": "_j3xt4MNzEeWPE-QAhbUzuQ"},
+    {"name": "TravelPlanner", "id": "_5EaVoMNxEeWPE-QAhbUzuQ"},
+    {"name": "CreditCardCenter", "id": "__s82QMN5EeWPE-QAhbUzuQ"}
+  ],
+  "interfaces": [
+    {"name": "Comission", "operations": ["payCommission"]},
+    {"name": "BookingSelection", "operations": ["bookSelected", "getFlightOffers"]},
+    {"name": "Booking", "operations": ["bookFlight"]},
+    {"name": "FlightOffers", "operations": ["getFlightOffersAirline"]},
+    {"name": "Configuration", "operations": ["setCreditCard"]},
+    {"name": "Declassification", "operations": ["declassifyCCDForAirline", "releaseCCD"]},
+    {"name": "AirlineAdministration", "operations": ["setAvailableFlights"]},
+    {"name": "BookingConfirmation", "operations": ["confirmBooking"]}
+  ],
+  "connectors": [
+    {"source": "TravelPlanner <TravelPlanner>", "target": "TravelAgency <TravelAgency>"},
+    {"source": "Airline <Airline>", "target": "TravelAgency <TravelAgency>"},
+    {"source": "TravelAgency <TravelAgency>", "target": "Airline <Airline>"},
+    {"source": "TravelPlanner <TravelPlanner>", "target": "Airline <Airline>"},
+    {"source": "Airline <Airline>", "target": "TravelPlanner <TravelPlanner>"}
+  ],
+  "resource_containers": [
+    {"name": "AgencyServer", "id": "_HM_VsMN5EeWPE-QAhbUzuQ"},
+    {"name": "AirlineServer", "id": "_fuWBEMN4EeWPE-QAhbUzuQ"},
+    {"name": "MobilePhone", "id": "_Lq-ZYMN4EeWPE-QAhbUzuQ"}
+  ],
+  "allocation": [
+    {"component": "TravelAgency <TravelAgency>", "server": "AgencyServer"},
+    {"component": "Airline <Airline>", "server": "AirlineServer"},
+    {"component": "TravelPlanner <TravelPlanner>", "server": "MobilePhone"},
+    {"component": "CreditCardCenter <CreditCardCenter>", "server": "MobilePhone"}
+  ]
+}

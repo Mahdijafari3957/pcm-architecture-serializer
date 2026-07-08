@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" id="_m1574NBaEfClkdDGvFel8g" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_pCuYwNBaEfClkdDGvFel8g" entityName="Appointment Management">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_a2oRANBbEfClkdDGvFel8g" entityName="Appointment Management.Receptionist Interface.OperationProvidedRole1" providedInterface__OperationProvidedRole="_515bB9BaEfClkdDGvFel8g"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_bSH6MNBbEfClkdDGvFel8g" entityName="Appointment Management.Physician Interface.OperationProvidedRole2" providedInterface__OperationProvidedRole="_4b_o19BaEfClkdDGvFel8g"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_b6ilENBbEfClkdDGvFel8g" entityName="Appointment Management.Patient Interface.OperationProvidedRole3" providedInterface__OperationProvidedRole="_2dFFF9BaEfClkdDGvFel8g"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_WVDjQNBbEfClkdDGvFel8g" entityName="Appointment Management.Database Management.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_y47B19BaEfClkdDGvFel8g"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_qhZWMNBaEfClkdDGvFel8g" entityName="Patient Database Management">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_XkCe4NBbEfClkdDGvFel8g" entityName="Patient Database Management.Database Management.OperationProvidedRole1" providedInterface__OperationProvidedRole="_y47B19BaEfClkdDGvFel8g"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_uFLmANBaEfClkdDGvFel8g" entityName="User Interface Receptionist">
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_dELtsNBbEfClkdDGvFel8g" entityName="User Interface Receptionist.Receptionist Interface.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_515bB9BaEfClkdDGvFel8g"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_v6gv8NBaEfClkdDGvFel8g" entityName="User Interface Physician">
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_da16MNBbEfClkdDGvFel8g" entityName="User Interface Physician.Physician Interface.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_4b_o19BaEfClkdDGvFel8g"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_xfl3YNBaEfClkdDGvFel8g" entityName="User Interface Patient">
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_dxT5cNBbEfClkdDGvFel8g" entityName="User Interface Patient.Patient Interface.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_2dFFF9BaEfClkdDGvFel8g"/>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_y47B19BaEfClkdDGvFel8g" entityName="Database Management"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_2dFFF9BaEfClkdDGvFel8g" entityName="Patient Interface"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_4b_o19BaEfClkdDGvFel8g" entityName="Physician Interface"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_515bB9BaEfClkdDGvFel8g" entityName="Receptionist Interface"/>
+</repository:Repository>
