@@ -1,10 +1,13 @@
 # pcm-architecture-serializer
+
 A Java tool for converting Palladio Component Model (PCM) software architecture models into text-based artifacts suitable for AI-driven architecture analysis.
-The tool currently offers four serialization methods:
-1. JSON serialization: Produces structured JSON for PCM models.
-2. Detailed text serialization: Produces a human-readable architecture report for PCM models.
-3. Compact text serialization: Produces a minimal summary listing the main PCM models.
-4. Security-focused serialization: Produces a security-oriented view including component exposure, exposed interfaces, external dependencies, communication paths, deployment topology, and component placement.
+
+The tool currently offers four serialization modes:
+
+1. **JSON serialization:** Produces a structured JSON representation of PCM architecture models.
+2. **Detailed text serialization:** Produces a human-readable architecture report for PCM models.
+3. **Compact text serialization:** Produces a minimal summary of the main PCM architecture elements.
+4. **Security-focused serialization:** Produces a security-oriented view including component exposure, exposed interfaces, external dependencies, communication paths, deployment topology, and component placement.
 
 
 
